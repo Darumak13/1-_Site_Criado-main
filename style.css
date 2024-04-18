@@ -1,0 +1,132 @@
+body{
+    background-image:linear-gradient(orange,red) ;
+    background-attachment: fixed;
+}
+
+.videos{
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.circle{
+    max-width: 190px;
+    border-radius: 50%;
+}
+
+p{
+    color: aqua;
+}
+
+h4{
+    color: aquamarine;
+}
+
+h3{
+    background-color: rgba(20, 230, 184, 0.938);
+    border-radius: 15px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.nav-button{
+    border:0;
+    border-radius:4px;
+    padding:8px;
+    background-color:rgb(242, 65, 34);
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav-button{
+    color: #FFF;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.543);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height:450){
+    .overlay a {font-size: 20px;}
+    .overlay, .closebtn{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+    background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+    background-size: cover;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

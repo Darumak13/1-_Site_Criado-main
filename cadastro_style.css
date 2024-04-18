@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    font-family: sans-serif;
+    color:  rgb(0, 255, 149);
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    background-image:url(Imagens/Login_screen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center top;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 40%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+#email{
+    margin-top: 10.3%;
+}
+
+#data_nascimento{
+    margin-left: 0.9%;
+}
+
+#genero{
+    margin-left: 0.8%;
+}
+
+input, select, textarea button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color:  rgb(0, 255, 149);
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float:left;
+    margin-left: 0.5em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="password"], .campo input[type="date"]{
+    padding: 0.2em;
+    border: 1px solid rgb(0, 255, 149);
+    box-shadow: 2px 2px 2px rgb(0, 247, 255);
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #e0e0f8;
+} 
+
+.Envio {
+    font-size: 1.2em;
+    background:  rgb(0, 255, 149);
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgb(3, 255, 179);
+    text-shadow: 1px 1px 1px rgb(0, 255, 157);
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    margin-right: -50%;
+    transform: translate(-50% -50%);
+    cursor: pointer;
+}
+
+.Envio:hover {
+    background: #00ff88;
+    box-shadow: inset 2px 2px 2px rgb(0, 255, 136) ;
+    text-shadow: none;
+}
+
+#genero{
+    display: inline-block;
+    padding: 0.2em;
+
+}
+
+.title{
+    color: rgb(0, 255, 157);
+    background: fixed;
+    border-radius: 8px;
+}
+
+.nav-button{
+    border:0;
+    border-radius:4px;
+    padding:8px;
+    background-color: rgb(0, 255, 157);
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav-button{
+    color: #FFF;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.543);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height:450){
+    .overlay a {font-size: 20px;}
+    .overlay, .closebtn{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
