@@ -1,14 +1,22 @@
 body{
-    background-image:linear-gradient(orange,red) ;
-    background-attachment: fixed;
+    background-attachment: fixed;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .videos{
-    justify-content: space-between;
-    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
 }
 
 #background-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -20,22 +28,34 @@ body{
     z-index: -1;
 }
 
+
 .circle{
     max-width: 190px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
 }
 
 p{
     color: aqua;
+    display: flex;
 }
 
 h4{
     color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h3{
     background-color: rgba(20, 230, 184, 0.938);
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 *{
@@ -98,7 +118,32 @@ h3{
     font-size: 60px;
 }
 
-@media screen and (max-height:450){
+
+
+@media (min-height:450px) {
+    #background-video { background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;}
+    body {
+    background: url("Imagens/2148011777.jpg") no-repeat;
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    }
+    .videos{
+        display: none;display: flex; background-size: cover;
+    }
+    .circle{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-height:450px){
     .overlay a {font-size: 20px;}
     .overlay, .closebtn{
         font-size: 40px;
@@ -107,13 +152,7 @@ h3{
     }
 }
 
-@media (max-width: 750px) {
-    #background-video { display: none; }
-    body {
-    background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
-    background-size: cover;
-    }
-  }
+
 
 
 
