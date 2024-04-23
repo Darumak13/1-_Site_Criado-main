@@ -1,0 +1,178 @@
+*{
+    font-family: 'Popins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: rgba(20, 230, 184, 0.938);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-image: url(Imagens/Tela_de_Login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+span{
+    color: #ffff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10xp 0;
+}
+header{
+    color: #ffff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #ffff;
+    padding: 0 0 0 37px;
+    background: rgba(255, 255, 255, 0.1);
+}
+i{
+    position: relative;
+    top: -31px;
+    left: 17px;
+    color: #ffff;
+}
+::-webkit-input-placeholder{
+    color: #ffff;
+}
+.submeter{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);;
+    cursor: pointer;
+    transition: .3s;
+}
+.submeter:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);;
+}
+.botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #ffff;
+    margin-top: 10px;
+}
+:left{
+    display: flex;
+}
+label a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.nav-button{
+    border:0;
+    border-radius:4px;
+    padding:8px;
+    background-color: rgb(0, 255, 157);
+    margin: 8px;
+    cursor: pointer;
+}
+
+.fas fa-spin fa-spinner{
+    border:0;
+    border-radius:4px;
+    padding:8px;
+    background-color: rgb(0, 0, 0);
+    margin: 8px;
+    margin-bottom: 50%;
+    cursor: pointer;
+}
+
+.nav-button{
+    color: #FFF;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.543);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height:450){
+    .overlay a {font-size: 20px;}
+    .overlay, .closebtn{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+
+
+
+

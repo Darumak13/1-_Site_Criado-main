@@ -1,0 +1,128 @@
+body{
+    background-image:url(Imagens/Carro_alegorico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 12px;
+}
+
+img{
+    height: 720px;
+    width: 1080px;
+    margin: "center";
+    margin-right:50%;
+    border: 2px solid rgb(255, 170, 0);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Popins', sans-serif;
+}
+
+.title{
+    font-size: 60px;
+    margin:"center";
+    margin-bottom: auto;
+    color: rgba(8, 243, 184, 0.822);
+    margin-right: 15%;
+    position: relative;
+}
+
+.text_sobre{
+    color: aquamarine;
+    font-size: 30px;
+    text-align: center;
+    color:rgb(0, 255, 200);
+    position: relative;
+}
+
+.background{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background::before{
+    content: '';
+    background-image: url(Imagens/Carro_alegorico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.10;
+}
+
+
+.nav-button{
+    border:0;
+    border-radius:4px;
+    padding:8px;
+    background-color:rgba(142, 255, 180, 0.884);
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav-button{
+    color: #FFF;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.543);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height:450){
+    .overlay a {font-size: 20px;}
+    .overlay, .closebtn{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
