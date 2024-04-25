@@ -4,14 +4,6 @@
     padding: 0;
 }
 
-h1{
-    background-color: rgba(20, 230, 184, 0.938);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 body{
     background-image: url(Imagens/Tela_de_Login.jpg);
     background-size: cover;
@@ -37,7 +29,7 @@ span{
     font-size: small;
     display: flex;
     justify-content: center;
-    padding: 10px 0 10xp 0;
+    padding: 10px 0 10px 0;
 }
 header{
     color: #ffff;

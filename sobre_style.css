@@ -4,17 +4,20 @@ body{
     background-size: cover;
     background-position: center center;
     margin-left: 12px;
+    background-attachment: fixed;
 }
 
 img{
     height: 720px;
     width: 1080px;
-    margin: "center";
+    
     margin-right:50%;
     border: 2px solid rgb(255, 170, 0);
     border: none;
     border-radius: 15px;
-    text-align: center;
+    
+    display: flex;
+    flex-direction: row; 
 }
 
 *{
@@ -125,4 +128,30 @@ img{
         top: 15px;
         right: 35px;
     }
+
 }
+
+@media only screen and (max-width: 991px) {
+    table {
+        position: fixed;
+        font-size: 14px;
+        display: flex;
+        background-attachment: fixed;
+    }
+    footer{
+        display: flex;
+        position: fixed;
+        background-attachment: fixed;
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: red;
+    }
+    nav ul {
+        display: none; /* Esconde o menu hamburguer por padrão na versão móvel */
+    }
+}
+

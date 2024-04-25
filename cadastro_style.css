@@ -11,17 +11,39 @@ fieldset{
 }
 
 body{
-    background-image:url(Imagens/Login_screen.jpg);
-    background-repeat: no-repeat;
+    background-image:url(Imagens/Pagina_Cadastro.jpg);
     background-size: cover;
-    background-position: right center top;
-    font-family: sans-serif;
-    font-size: 1em;
-    margin-left: 40%;
-    margin-top: 3%;
-    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #ffff;
+    padding: 0 0 0 37px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#email{
+    margin-top: 10%;
+}
+
+#genero{
+    margin-right: 60%;
+}
+
+#genero_masculino{
+    margin-left: 24%
+}
+
+#genero_feminino{
+    margin-left: 19%;
+}
 
 h1{
     color: #000000;
@@ -30,20 +52,34 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 60%;
-    margin-bottom: 5%;
+    
 }
 
-#email{
-    margin-top: 10.3%;
+header{
+    color: #0cec17;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    text-align: center;
 }
 
-#data_nascimento{
-    margin-left: 0.9%;
+::-webkit-input-placeholder{
+    color: #ffff;
 }
 
-#genero{
-    margin-left: 0.8%;
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.singup{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
 }
 
 input, select, textarea button{
@@ -52,6 +88,8 @@ input, select, textarea button{
 
 .campo{
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .campo label{
@@ -66,47 +104,32 @@ fieldset.grupo .campo{
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo input[type="password"], .campo input[type="date"]{
-    padding: 0.2em;
     border: 1px solid rgb(0, 255, 149);
     box-shadow: 2px 2px 2px rgb(0, 247, 255);
 }
 
-.campo select option{
-    padding-right: 1em;
-}
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
     background: #e0e0f8;
 } 
 
 .Envio {
-    font-size: 1.2em;
-    background:  rgb(0, 255, 149);
-    border: 0;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgb(3, 255, 179);
-    text-shadow: 1px 1px 1px rgb(0, 255, 157);
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    margin-right: -50%;
-    transform: translate(-50% -50%);
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);;
     cursor: pointer;
+    transition: .3s;
 }
 
 .Envio:hover {
-    background: #00ff88;
-    box-shadow: inset 2px 2px 2px rgb(0, 255, 136) ;
-    text-shadow: none;
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);;
 }
 
-#genero{
-    display: inline-block;
-    padding: 0.2em;
 
-}
 
 .title{
     color: rgb(0, 255, 157);
@@ -167,6 +190,46 @@ fieldset.grupo .campo{
     font-size: 60px;
 }
 
+#signup-form {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    position: relative; }
+    #signup input[type="text"],
+    #signup input[type="password"],
+    #signup input[type="email"], 
+    #singup input[type="date"],
+    #singup input[type="radio"]{
+        width: 18em; }
+    #signup > * {
+        margin: 0 0 0 1em; }
+    #signup > :first-child {
+        margin: 0 0 0 0; }
+    @media screen and (max-width: 480px) {
+        #signup {
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        #signup input[type="type"],
+        #signup input[type="password"],
+        #signup input[type="email"],
+        #singup input[type="date"],
+        #singup input[type="radio"] {
+            width: 100%; }
+        #signup > * {
+            margin: 1.25em 0 0 0; }
+        #signup .message {
+            bottom: -1.5em;
+            font-size: 0.9em;
+            height: 1em;
+            left: 0;
+            line-height: inherit;
+            margin-top: 0;
+            position: absolute; } }
+
+
 @media screen and (max-height:450){
     .overlay a {font-size: 20px;}
     .overlay, .closebtn{
@@ -175,6 +238,40 @@ fieldset.grupo .campo{
         right: 35px;
     }
 
-    
 }
 
+@media screen and (max-width: 1680px){
+    .overlay a {font-size: 20px;}
+    .overlay, .closebtn{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    body{
+        bottom: 3.5em;
+        left: 3.5em;
+    };
+}
+
+@media screen and (max-width: 736px){
+    body{
+        bottom: 2em;
+        left: 2em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        bottom: 1.25em;
+        left: 1.25em; 
+    } 
+}
+
+@media screen and (max-height: 640px) {
+    body {
+        bottom: auto;
+        left: auto;
+        margin: 1em 0 0 0;
+        position: relative; 
+    } 
+}
