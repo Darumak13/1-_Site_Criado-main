@@ -10,6 +10,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+    border-radius: 20px;
+    text-align: center;
 }
 
 #background-video {
@@ -29,6 +31,11 @@ body{
 }
 
 
+.title_video{
+    color: aquamarine;
+    
+}
+
 .circle{
     max-width: 190px;
     border-radius: 50%;
@@ -40,14 +47,28 @@ body{
 
 p{
     color: aqua;
-    display: flex;
 }
 
-h4{
-    color: aquamarine;
+.title{
+    color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h4{
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome{
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
 }
 
 th{
@@ -201,7 +222,11 @@ h3{
     }
 }
 
-
+.texto-exemplo {
+    border-radius: 8px;
+    border: 2px solid;
+    padding: 10px;
+}
 
 
 

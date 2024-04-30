@@ -6,6 +6,7 @@
     <link rel="icon" href="icones/parque_tematico.png">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
     <title>AdventureLand</title>
@@ -14,7 +15,7 @@
 <body>
     <div style="text-align: center;">
         <h3>O MELHOR PARQUE DE TODOS</h3>
-        <h4><strong>Sendo um dos parques mais bem prestigiados de todos com <br> 
+        <h4 class="title"><strong>Sendo um dos parques mais bem prestigiados de todos com <br> 
             muitas avaliações de usuarios de todo o mundo!!</strong>
         </h4>
         
@@ -40,8 +41,50 @@
         <source src="videos/TelaFundo_do_Inicio.mp4" type="video/mp4">
     </video>
 
-    <div>
-        <table style="margin-inline-start: auto; margin: 5%;">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="title_video" > 
+                        <th>Realidade Virtual</th>
+                    </div>
+                    <video  style="width:460px; height:400px;" controls loop autoplay> 
+                        <source class="videos" src="videos/6498759-hd_1280_720_25fps.mp4" type="video/mp4">
+                    </video>
+                    <p class="bg-dark texto-exemplo" >
+                        Sendo um dos atrativos incriveis para os conhecedores de tecnologia:  Apresentamos os 
+                        oculos VR onde você terá uma experiência incrivel, mas mesmo se você não é um entusiasta 
+                        também é muito bem-vindo! 
+                    </p>
+                </div>
+            <div class="col-sm">
+                <div class="title_video"> 
+                    <th>Arcade</th>
+                </div>
+                <video  style="width:500px; height:400px;" controls loop autoplay>
+                    <source class="videos" src="videos/Arcade.mp4" type="video/mp4">
+                </video>
+                <p class="bg-dark texto-exemplo">
+                    Temos varia opções de arcade caso você se interesse pelos nossos prêmios <br>
+                    trocados com os tickets que ganham enquanto se divertem!
+                </p>
+            </div>
+            <div class="col-sm">
+            <div class="title_video"> 
+                <th>Montanha-Russa</th>
+            </div>
+                <video style="width:500px; height:400px;" controls loop autoplay>
+                    <source class="videos" src="videos/Montanha-Russa.mp4" type="video/mp4">
+                </video>
+                <p class="bg-dark texto-exemplo text-start " >
+                    Uma das maiores Montanha-Russas do mundo, sendo o seu alcance enorme e segurança mais avançado. <br>
+                    podendo assim ser mais tranquilo para todos poderem se divertir.
+                </p>     
+            </div>
+        </div>
+    
+
+        <!-- <table style="margin-inline-start: auto; margin: 5%;">
             <tr>
                 <th>Realidade Virtual<th>
                 <th>Arcade</th>
@@ -79,7 +122,7 @@
                 </td> 
             </tr>
         </table>
-    </div>
+    </div>  -->
 
     <table cellpadding="4"; cellspacing ="10"; class="BookFlip">
         <tr>
@@ -113,7 +156,32 @@
     </table>
 
     <div style="margin-top: 1000px">
-        <table>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h4 class="nome"><u>Aline Barros</u></h4>
+                    <img class="circle" title = "Casal meio feliz" src="Imagens/2148011777.jpg">
+                    <p style="text-align:center">A experiência no AdventureLand foi simplesmente incrivel pois me <br> 
+                        proporcionou varios momentos incriveis com o meu namorado.</p>
+                </div>
+            <div class="col-sm">
+                <h4 class="nome"><u>Camile Monteiro</u></h4>
+                <img class="circle" title="Voltando a ser criança" src="Imagens/Diversão à bessa.jpg">
+                <p style="text-align: center;">Foi uma grande experiência, era como se voltasse a ter os meus <br>
+                    10 anos de idade
+                </p>
+            </div>
+            <div class="col-sm">
+                <h4 class="nome"><u>Guilherme</u></h4>
+                <img class="circle" title="Brinquedo inofensivo" src="Imagens/SkyFall.jpg">
+                <p style="text-align: center;">No começo fiquei com medo porém depois de todos os procedimentos <br>
+                    que foram tomados fiquei mais motivado à ir
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <!-- <table>
             <td>
                 <img class="circle" title = "Casal meio feliz" src="Imagens/2148011777.jpg" 
                 alt="Foto de casal meio feliz">
@@ -128,7 +196,7 @@
                 alt="Lembranças">
             </td>
             <td>
-                <h4><u>Camile Monteiro</u></h4>
+                <h4 class="nome"><u>Camile Monteiro</u></h4>
                 <p style="text-align: center;">Foi uma grande experiência, era como se voltasse a ter os meus <br>
                     10 anos de idade
                 </p>
@@ -144,7 +212,7 @@
                 </p>
             </td>
         </table> 
-    </div>
-
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -7,17 +7,14 @@ body{
     background-attachment: fixed;
 }
 
-img{
-    height: 720px;
-    width: 1080px;
-    
-    margin-right:50%;
-    border: 2px solid rgb(255, 170, 0);
+img{    
     border: none;
     border-radius: 15px;
-    
-    display: flex;
-    flex-direction: row; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: flex;
+    max-width: 100%;
 }
 
 *{
@@ -33,16 +30,15 @@ img{
     margin:"center";
     margin-bottom: auto;
     color: rgba(8, 243, 184, 0.822);
-    margin-right: 15%;
-    position: relative;
 }
 
 .text_sobre{
     color: aquamarine;
     font-size: 30px;
-    text-align: center;
     color:rgb(0, 255, 200);
-    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .background{
@@ -114,6 +110,16 @@ img{
     color: #f1f1f1;
 }
 
+footer{
+    display: flex;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: flex;
+    max-width: 100%;
+}
+
 .overlay .closebtn{
     position: absolute;
     top: 25px;
@@ -138,12 +144,6 @@ img{
         display: flex;
         background-attachment: fixed;
     }
-    footer{
-        display: flex;
-        position: fixed;
-        background-attachment: fixed;
-
-    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -152,6 +152,12 @@ img{
     }
     nav ul {
         display: none; /* Esconde o menu hamburguer por padrão na versão móvel */
+    }
+}
+
+@media only screen and (min-width: 480px){
+    img{
+        max-width: 100%;
     }
 }
 
