@@ -14,7 +14,6 @@ body{
 }
 
 #background-video {
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 5vh;
@@ -27,8 +26,17 @@ body{
     top: 0;
     bottom: 0;
     z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+.fakeimg {
+    height: 2px;
+    width: 2px;
+    background: url("Imagens/2148011777.jpg") no-repeat;
+}
 
 .title_video{
     color: aquamarine;
@@ -200,7 +208,6 @@ h3{
         background-position: center;
         background-attachment: fixed;}
     body {
-    background: url("Imagens/2148011777.jpg") no-repeat;
     background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -240,7 +247,7 @@ h3{
     margin-top: 68px;
 }
 
-.kkk {
+.centraliza {
     text-align: center;
     justify-content: center;
     align-items: center;
