@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <link rel="icon" href="icones/parque_tematico.png">
     <link rel="stylesheet" href="cadastro_style.css">
-    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
 <body>
-
-
+    
+    
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -22,59 +21,66 @@
             <a href="#">Duvidas</a>
         </div>
     </div>
-
+    
     <button class="nav-button" onclick="openNav()">
         <i class="fa-solid fa-bars"></i>
     </button>
     
-        <div style="text-align: center;">
-            <header><u>Cadastro de Cliente</u></header>
+    <div style="text-align: center;">
+        <header><u class="gradient">Cadastro de Cliente</u></header>
         <div class="formulario">
-        <form action="#" method="GET"></form>
+            <form id ="form" action="#" method="GET">
             <div class="Signup" style="text-align: center;">    
-        <fieldset class="grupo">
-                <div class="campo">
-                    <label for="nome"><strong>Nome:</strong></label><br>
-                    <input type="text" name="nome" id="nome" required minlength="3" maxlength="50" placeholder="Digite seu nome">
-                </div>
-                <div class="campo">
-                    <label for="email"><strong>Email</strong></label>
-                    <input type="email" name="email" id="email" required placeholder="Digete o seu email">
-                </div>
-            </fieldset>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="senha"><strong>Senha</strong></label>
-                    <input type="password" name="senha" id="senha" required minlength="16">
-                </div>
-                <div class="campo">   
-                    <label for="confirma_senha"><strong>Confirma Senha:</strong></label>
-                    <input type="password" name="confirma_senha" id="confirma_senha" required minlength="16">
-                </div>
-            </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome:</strong></label><br>
+                        <input type="text" name="nome" id="nome" required minlength="3" maxlength="50" placeholder="Digite seu nome">
+                    </div>
+                    <div class="campo">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="email" id="email" required placeholder="Digete o seu email">
+                    </div>
+                </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="senha"><strong>Senha</strong></label>
+                        <input type="password" name="senha" id="senha" required minlength="8">
+                    </div>
+                    <div class="campo">   
+                        <label for="confirma_senha"><strong>Confirma Senha:</strong></label>
+                        <input type="password" name="confirma_senha" id="confirma_senha" required minlength="8">
+                    </div>
+                </fieldset>
                 <div class="campo" style="margin-left: 3%;">
                     <label style="margin-right: 55%;" for="data_nascimento"><strong>Data de Nascimento</strong></label>
                     <input style="margin-right: 50%;" type="date" name="data_nascimento" id="data_nascimento" required>
                 </div>
-            <fieldset class="grupo" style="margin-right: 12%;">
-                <div id="genero" style="color: rgb(0, 255, 149);">
-                    <label for="genero"><strong>Gênero:</strong></label><br> <br>
-                    <input type="radio" id="genero_masculino" name="genero" value="masculino" required>
-                    <label for="genero_masculino"><strong>Masculino</strong></label><br>
-                    <input type="radio" id="genero_feminino" name="genero" value="feminino" required> 
-                    <label for="genero_feminino"><strong>Feminino</strong></label><br>
-                    <input type="radio" id="genero_outro" name="genero" value="outro" required>
-                    <label for="genero_outro"><strong>Outro</strong></label><br>
-                </div>
-            </fieldset>
+                <fieldset class="grupo" style="margin-right: 12%;">
+                    <div id="genero" style="color: rgb(0, 255, 149);">
+                        <label for="genero"><strong>Gênero:</strong></label><br> <br>
+                        <input type="radio" id="genero_masculino" name="genero" value="masculino" required>
+                        <label for="genero_masculino"><strong>Masculino</strong></label><br>
+                        <input type="radio" id="genero_feminino" name="genero" value="feminino" required> 
+                        <label for="genero_feminino"><strong>Feminino</strong></label><br>
+                        <input type="radio" id="genero_outro" name="genero" value="outro" required>
+                        <label for="genero_outro"><strong>Outro</strong></label><br>
+                    </div>
+                </fieldset>
 
-            <br>
-            
-            <div class="campo">
-                <a href="Login.html"><input class="Envio" type="submit" value="Cadastrar"></a>
-            </div>
+                <br>
+                
+                <div  class="campo">
+                    <button class="button" type="submit" onclick="return validadateConfirmPass()">Enviar
+                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                            <path clip-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                            fill-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </form>
-
-</body>
-</html>
+        
+    </body>
+    <script type="text/javascript" src="script.js" defer></script>
+    </html>
