@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="icones/parque_tematico.png">
     <link rel="stylesheet" href="Login_style.css">
-    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <title>Login</title>
@@ -20,7 +19,7 @@
             <a href="#">Duvidas</a>
         </div>
     </div>
-
+    
     <button class="nav-button" onclick="openNav()">
         <i class="fa-solid fa-bars"></i>
     </button>
@@ -31,47 +30,50 @@
                 <span>Você possui uma conta?</span>
                 <header>Login</header>
             </div>
-
+            
+            <form id ="form" action="#" method="GET">        
             <div class="input-field">
                 <label for="email"></label>
                 <input type="text" name="email" id="email" class="input" placeholder="Usuário" required placeholder>
                 <i class="bx bx-user"></i>
             </div>
             <div class="input-field">
-                <input type="password" class="input" placeholder="Senha" required>
+                <label for="password"></label>
+                <input type="password" class="input" id="senha" placeholder="Senha" required>
                 <i class="bx bx-lock"></i>
             </div>
             <div class="input-field">
-                <button class="button" type="submit">
+                <button class="button" type="button" onclick="Login()">
                     Logar
                     <div class="arrow-wrapper">
                         <div class="arrow">
-
+                            
                         </div>
                 </div>
                 </button>
             </div>
+            </form>
 
             <div class="checkbox-wrapper-12">
                 <div class="cbx">
                     <input checked="" type="checkbox" id="cbx-12">
                     <label for="cbx-12"></label>
                     <svg fill="none" viewBox="0 0 15 14" height="14" width="15">
-                    <path d="M2 8.36364L6.23077 12L13 2"></path>
+                        <path d="M2 8.36364L6.23077 12L13 2"></path>
                     </svg>
                 </div>
-                
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                    <filter id="goo-12">
-                        <feGaussianBlur result="blur" stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
-                        <feColorMatrix result="goo-12" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" mode="matrix" in="blur"></feColorMatrix>
-                        <feBlend in2="goo-12" in="SourceGraphic"></feBlend>
-                    </filter>
+                        <filter id="goo-12">
+                            <feGaussianBlur result="blur" stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+                            <feColorMatrix result="goo-12" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" mode="matrix" in="blur"></feColorMatrix>
+                            <feBlend in2="goo-12" in="SourceGraphic"></feBlend>
+                        </filter>
                     </defs>
                 </svg>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
