@@ -69,7 +69,13 @@ function validar(){
             return false;
         }
         
-        if(passWordInput.value.length <5){
+        if(passWordInput.value == ""){
+            alert("Informe uma senha")
+            return false;
+        }
+
+        // Verifica se a senha tem o número de caracteres validos
+        if(passWordInput.value.length < 5){
             // Senha válida
             alert('mínimo 6 digitos');
             return false;
@@ -81,35 +87,48 @@ function validar(){
             
         }
 
+        // Verifica se a duas senha são iguais
         if(passWordInput.value != confpassWordInput.value){
             alert("Senha divergentes")
             return false;
         }
 
-        alert("A");
-
         if(dateInput.value == ""){
-            alert("Informe o genero")
+            alert("Informe a data de nascimento")
             return false;
         }
-        // // Verifica se senha está preenchida
-        // if(!validadatePassword(passWordInput.value, 8)){
-        //     alert("A senha precias ser no mínimo 8 dígitos.")
-        //     return false;
-        // }
-    
-        // // Verificar se a situação foi selecionada
-        // if(!validadateConfirmPass(passWordInput,confpassWordInput)){
-        //     alert("A senha não é valida")
-        //     return false;
-        // }
-    
 
-        this.form.submit();
-    
         // Se todos os campos estiverem corretamente preenchidos envie o form
+        this.form.submit();
+        
+        if(this.submit == true){
+            alert("Teste")
+            Login();
+        }
 }
 
+
+function Login(){
+    
+    alert("Teste")
+    let form = document.querySelector("#form");
+    alert("Teste")
+    let Email = document.querySelector("#email")
+    let password = document.querySelector("#senha")
+
+    if(Email != emailInput.value){
+        console.log(emailInput.value)
+        alert("Email Invalido");
+        return false;
+    }
+
+    if(password != passWordInput.value){
+        alert("Senha Invalida");
+        return false;
+    }
+
+    this.form.submit();
+}
 
 
 
