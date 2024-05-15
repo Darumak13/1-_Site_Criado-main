@@ -101,7 +101,7 @@ function validar(){
         // Se todos os campos estiverem corretamente preenchidos envie o form
         this.form.submit();
         
-        if(this.submit == true){
+        if(this.form.submit == true){
             alert("Teste")
             Login();
         }
@@ -111,7 +111,7 @@ function validar(){
 function Login(){
     
     alert("Teste")
-    let form = document.querySelector("#form");
+    let formulario = document.querySelector("#form");
     alert("Teste")
     let Email = document.querySelector("#email")
     let password = document.querySelector("#senha")
@@ -127,7 +127,7 @@ function Login(){
         return false;
     }
 
-    this.form.submit();
+    this.formulario.submit();
 }
 
 
