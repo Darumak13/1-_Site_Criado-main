@@ -53,19 +53,42 @@ body{
     min-height: 10vh;
 }
 
-p{
-    color: aqua;
+#texto-video{
+    color: #ffffff;
+    top: 200px;
+    position: absolute;
+    left: 750px;
+    font-size: 14pt;
+}
+
+#title-video{
+    left: 15px;
+    position: absolute;
+    color: #FFF;
+}
+
+#texto-video_2{
+    color: #ffffff;
+    position: relative;
+    bottom:280px;
+    right: 780px;
+    font-size: 14pt;
+}
+
+#title-video_2{
+    left: 540px;
+    top: 1px;
+    position: absolute;
+    color: #ffffff;
+}
+
+#area{
+    position: relative;
 }
 
 .title{
     color: aqua;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h4{
-    color: aqua;
     justify-content: center;
     align-items: center;
 }
@@ -102,9 +125,9 @@ h3{
     border:0;
     border-radius:4px;
     padding:15px;
-    background-color:rgba(0, 128, 255, 1);
+    background-color:#F26363;
     padding:15px;
-    background-color:rgba(0, 128, 255, 1);
+    background-color:#F26363;
     margin: 8px;
     cursor: pointer;
 }
@@ -338,6 +361,10 @@ h1{
     transform: translateY();
 }
 
+video{
+    border-radius: 5px;
+    width: 700px;
+}
 
 
 

@@ -101,34 +101,12 @@ function validar(){
         // Se todos os campos estiverem corretamente preenchidos envie o form
         this.form.submit();
         
-        if(this.submit == true){
+        if(this.form.submit == true){
             alert("Teste")
             Login();
         }
 }
 
-
-function Login(){
-    
-    alert("Teste")
-    let form = document.querySelector("#form");
-    alert("Teste")
-    let Email = document.querySelector("#email")
-    let password = document.querySelector("#senha")
-
-    if(Email != emailInput.value){
-        console.log(emailInput.value)
-        alert("Email Invalido");
-        return false;
-    }
-
-    if(password != passWordInput.value){
-        alert("Senha Invalida");
-        return false;
-    }
-
-    this.form.submit();
-}
 
 
 

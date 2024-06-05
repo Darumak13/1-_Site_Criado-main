@@ -13,8 +13,9 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="index.html">Inicio</a>
+            <a href="pagina.html">Inicio</a>
             <a href="sobre.html">Sobre</a>
+            <a href="cadastro.htm">Cadastro</a>
             <a href="#">Contatos</a>
             <a href="#">Duvidas</a>
         </div>
@@ -31,7 +32,7 @@
                 <header>Login</header>
             </div>
             
-            <form id ="form" action="#" method="GET">        
+            <form id ="form" action="validacaoForm.php" method="post">        
             <div class="input-field">
                 <label for="email"></label>
                 <input type="text" name="email" id="email" class="input" placeholder="Usuário" required placeholder>
@@ -39,11 +40,12 @@
             </div>
             <div class="input-field">
                 <label for="password"></label>
-                <input type="password" class="input" id="senha" placeholder="Senha" required>
+                <input type="password" class="input" id="senha" name="senha" placeholder="Senha" required>
                 <i class="bx bx-lock"></i>
             </div>
             <div class="input-field">
-                <button class="button" type="button" onclick="Login()">
+                <input type="hidden" name="tipo" value="login">
+                <button class="button" type="submit" onclick="Login()">
                     Logar
                     <div class="arrow-wrapper">
                         <div class="arrow">
