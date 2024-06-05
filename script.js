@@ -108,6 +108,28 @@ function validar(){
 }
 
 
+function Login(){
+    
+    alert("Teste")
+    let form = document.querySelector("#form");
+    alert("Teste")
+    let Email = document.querySelector("#email")
+    let password = document.querySelector("#senha")
+
+    if(Email != emailInput.value){
+        console.log(emailInput.value)
+        alert("Email Invalido");
+        return false;
+    }
+
+    if(password != passWordInput.value){
+        alert("Senha Invalida");
+        return false;
+    }
+
+    this.form.submit();
+}
+
 
 
 
